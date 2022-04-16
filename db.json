@@ -2,9 +2,9 @@
   "tasks": [
     {
       "id": 1,
-      "text": "Ashwin",
+      "text": "Captain",
       "day": "May 5th at 2:30pm",
-      "reminder": false
+      "reminder": true
     },
     {
       "id": 2,
@@ -14,9 +14,15 @@
     },
     {
       "id": 3,
-      "text": "Food shopping",
+      "text": "Dev",
       "day": "May 7th at 12:30pm",
-      "reminder": false
+      "reminder": true
+    },
+    {
+      "text": "ss",
+      "day": "ss",
+      "id": 4,
+      "reminder": true
     }
   ]
 }
