@@ -4,13 +4,13 @@
       "id": 1,
       "text": "Captain",
       "day": "May 5th at 2:30pm",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 2,
       "text": "Ashwin",
       "day": "May 5th at 2:30pm",
-      "reminder": false
+      "reminder": true
     },
     {
       "id": 3,
