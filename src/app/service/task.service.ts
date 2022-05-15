@@ -13,26 +13,26 @@ const headers = new HttpHeaders({
   providedIn: 'root',
 })
 export class TaskService {
-  private url = 'http://localhost:5000/tasks';
+  //private url = 'http://localhost:5000/tasks';
+  private url = 'http://localhost:4000/api/task';
   constructor(private http: HttpClient) {}
 
-  getTasks(): Observable<Task[]> {
-    return this.http.get<Task[]>(this.url);
+  getTasks(): Observable<any> {
+    return this.http.get<any>(this.url);
   }
 
   deleteTask(task: Task): Observable<Task> {
-    const deleteUrl = this.url + '/' + task.id;
+    const deleteUrl = this.url + '/' + task._id;
     return this.http.delete<Task>(deleteUrl);
   }
 
   toggleReminder(task: Task): Observable<Task> {
-    const putUrl = this.url + '/' + task.id;
-    //return this.http.put<Task>(putUrl, task, headers);
+    const putUrl = this.url + '/' + task._id;
 
     return this.http.put<Task>(putUrl, task);
   }
 
-  addTask(task: Task): Observable<Task> {
+  addTask(task: Task): Observable<any> {
     return this.http.post<Task>(this.url, task);
   }
 }
